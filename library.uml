@@ -1,0 +1,27 @@
+@startuml
+
+entity Author {
+  *ID : int
+  Name : string
+  Books : array
+}
+
+entity Book {
+  *ID : int
+  Name : string
+  Year_of_publication : int
+  Availability : boolean
+  Author : string
+}
+
+entity Reader {
+  *ID : int
+  Name : string
+  Phone_number : string
+  Email : string
+}
+
+Author *--* Book : "Writes"
+Reader o--o Book : "Borrows"
+
+@enduml
