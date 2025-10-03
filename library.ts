@@ -1,7 +1,7 @@
 interface Author {
   id: number;
-  name: string;
-  books: Book[];   
+  name: string;  
+  books: Book[];
 }
 
 interface Book {
